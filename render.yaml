@@ -3,11 +3,10 @@ services:
     name: sriya-web-intelligence
     runtime: docker
     dockerfilePath: ./Dockerfile
-    plan: starter          # cheapest paid plan with enough RAM for Playwright+OCR;
-                            # the free plan often OOMs on Chromium -- see README-DEPLOY.md
+    plan: free
     envVars:
       - key: WEBAPP_USERNAME
-        sync: false          # set in the Render dashboard, not committed
+        sync: false
       - key: WEBAPP_PASSWORD
         sync: false
       - key: WEBAPP_SECRET_KEY
@@ -19,11 +18,8 @@ services:
       - key: WEBAPP_PORT
         value: "8005"
       - key: DATA_DIR
-        value: /data
-      - key: DASHBOARD_CORPUS_PATH
-        value: /data/dashboard_corpus.json
+        value: /tmp
       - key: FRONTEND_ORIGIN
-        sync: false          # e.g. https://your-app.vercel.app -- set after your first Vercel deploy
+        sync: false
       - key: CROSS_ORIGIN_COOKIES
         value: "1"
-    
