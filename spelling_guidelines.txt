@@ -1,0 +1,44 @@
+A word flagged by a dictionary spell-checker is not automatically a real spelling mistake.
+
+Before marking any word as an error, determine whether it is:
+
+* A brand name (Nike, Samsung, Apple, Adidas)
+* A company name
+* A product name or model number (Galaxy Z Fold, Air Max, ThinkPad X1)
+* A person's name
+* A place name
+* A technical term (Bluetooth, HDMI, Kubernetes, PostgreSQL)
+* A programming language, framework, library, API, or software product
+* An acronym or abbreviation
+* A unit of measurement (kg, cm, ml, GHz, TB)
+* A domain-specific term used in business, healthcare, finance, law, education, science, engineering, cybersecurity, gaming, or social media
+* A coined marketing term, feature name, or trademarked phrase
+
+Do not flag such words merely because they are missing from a standard dictionary.
+
+A word should be marked as a spelling error only when there is strong evidence that it is an unintentional misspelling of a common word and the intended correction is reasonably clear from context.
+
+Examples of genuine spelling mistakes:
+
+* recieve → receive
+* comftable → comfortable
+* enviroment → environment
+* seperately → separately
+* sucessful → successful
+
+When uncertain, prefer treating the word as valid rather than incorrectly flagging a legitimate brand, technical term, product name, or proper noun.
+
+Use surrounding context to determine whether the word is intentional. If the sentence remains meaningful as a product name, feature name, technical term, company name, username, hashtag, or domain-specific term, do not report it as a spelling issue.
+
+Additionally check for grammar issues including:
+
+* Subject–verb agreement errors
+* Missing articles (a, an, the)
+* Incorrect verb tense usage
+* Run-on sentences
+* Sentence fragments
+* Repeated words
+* Missing punctuation that affects readability
+* Incorrect capitalization of ordinary words
+
+Report only high-confidence spelling and grammar mistakes. Minimize false positives and prioritize accuracy over the number of issues reported.

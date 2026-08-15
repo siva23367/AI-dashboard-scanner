@@ -1,0 +1,9 @@
+Product pages should include schema.org Product structured data as JSON-LD, with the @type set to "Product". This allows search engines to show rich results such as price and star ratings directly in search listings.
+
+The Product schema should include an "offers" field containing price, priceCurrency, and availability. Missing offers data means the product cannot show a price snippet in search results.
+
+Including "aggregateRating" or "review" fields in the Product schema enables star-rating rich snippets in search results, which significantly improve click-through rate from search.
+
+Product titles should be descriptive and accurately match the product being sold. A title that does not match the product description or images can hurt both SEO relevance and customer trust, and may trigger marketplace policy violations.
+
+Duplicate or near-duplicate product descriptions across many product pages can be treated as low-quality or duplicate content by search engines, hurting rankings for all affected pages.

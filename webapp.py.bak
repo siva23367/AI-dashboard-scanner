@@ -1,0 +1,381 @@
+"""
+webapp.py -- minimal login-gated web front end for the Sriya Web Intelligence
+Scanner and the PDF dashboard-ingestion pipeline.
+
+Flow
+----
+  /login      -> single-user login (credentials from .env)
+  /           -> home page: choose one of Dashboard / PDF / Website Link
+  /website    -> enter a PDP URL -> runs the SAME pipeline as pro_scanner.py
+                 (semantic + spelling issues from scanner.py's core engine,
+                 plus SEO/accessibility/security/performance/conversion from
+                 pro_scanner.py) -> saves + shows the report
+  /pdf        -> upload a dashboard PDF/image -> runs dashboard_ingest.py's
+                 text/OCR pipeline -> saves + shows a dashboard summary
+  /dashboard  -> lists every report generated so far, newest first
+
+Nothing here re-implements scoring or extraction logic -- every route just
+calls into pro_scanner.py / scanner.py / dashboard_ingest.py / pdf_export.py,
+the same functions the CLI tools use, so the web UI and CLI always produce
+identical output.
+"""
+from __future__ import annotations
+
+import functools
+import json
+import os
+import secrets
+import traceback
+import uuid
+from dataclasses import asdict
+from datetime import datetime, timezone
+from pathlib import Path
+
+from flask import (
+    Flask, request, redirect, url_for, render_template_string,
+    session, send_from_directory, flash,
+)
+from werkzeug.utils import secure_filename
+
+import scanner as core
+import pro_scanner as pro
+import dashboard_ingest as ingest
+import pdf_export
+
+APP_ROOT = Path(__file__).parent
+REPORTS_DIR = APP_ROOT / "reports"
+UPLOADS_DIR = APP_ROOT / "uploads"
+REPORTS_DIR.mkdir(exist_ok=True)
+UPLOADS_DIR.mkdir(exist_ok=True)
+INDEX_PATH = REPORTS_DIR / "index.json"
+ALLOWED_UPLOAD_EXT = {".pdf", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tiff"}
+
+app = Flask(__name__)
+app.secret_key = os.environ.get("WEBAPP_SECRET_KEY") or secrets.token_hex(32)
+
+# Single-user login. Set WEBAPP_USERNAME / WEBAPP_PASSWORD in .env for real
+# use. Falls back to admin/admin for local testing only -- change this
+# before running the app anywhere reachable outside localhost.
+WEBAPP_USERNAME = os.environ.get("WEBAPP_USERNAME", "admin")
+WEBAPP_PASSWORD = os.environ.get("WEBAPP_PASSWORD", "admin")
+
+
+# ---------------------------------------------------------------- auth ----
+
+def login_required(view):
+    @functools.wraps(view)
+    def wrapped(*args, **kwargs):
+        if not session.get("logged_in"):
+            return redirect(url_for("login", next=request.path))
+        return view(*args, **kwargs)
+    return wrapped
+
+
+# ----------------------------------------------------------- report log ---
+
+def _load_index():
+    if INDEX_PATH.exists():
+        try:
+            return json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return []
+    return []
+
+
+def _save_index(entries):
+    INDEX_PATH.write_text(json.dumps(entries, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def _add_report(entry: dict):
+    entries = _load_index()
+    entries.insert(0, entry)
+    _save_index(entries)
+
+
+def _new_report_dir():
+    rid = datetime.now().strftime("%Y%m%d_%H%M%S_") + uuid.uuid4().hex[:6]
+    d = REPORTS_DIR / rid
+    d.mkdir(parents=True, exist_ok=True)
+    return rid, d
+
+
+# --------------------------------------------------------------- style ----
+
+BASE_CSS = """
+body{font-family:Inter,Arial,sans-serif;background:#f5f7fb;color:#172033;margin:0}
+.wrap{max-width:900px;margin:auto;padding:40px 24px}
+h1{margin-bottom:4px}
+.muted{color:#687386}
+a{color:#2b5fff;text-decoration:none}
+a:hover{text-decoration:underline}
+.card{background:#fff;border:1px solid #e5e9f0;border-radius:14px;padding:22px;margin:16px 0}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:24px}
+.option{background:#fff;border:1px solid #e5e9f0;border-radius:14px;padding:26px;text-align:center;cursor:pointer;transition:.15s}
+.option:hover{border-color:#2b5fff;box-shadow:0 4px 14px rgba(43,95,255,.12)}
+.option .emoji{font-size:34px}
+.option h3{margin:10px 0 4px}
+form{display:flex;flex-direction:column;gap:12px}
+input[type=text],input[type=password],input[type=url],input[type=file]{padding:10px 12px;border:1px solid #d6dce6;border-radius:8px;font-size:15px}
+button{background:#2b5fff;color:#fff;border:none;border-radius:8px;padding:11px 18px;font-size:15px;cursor:pointer}
+button:hover{background:#1c46d6}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.flash{background:#fff3cd;border:1px solid #ffe08a;color:#7a5b00;padding:10px 14px;border-radius:8px;margin-bottom:14px}
+table{width:100%;border-collapse:collapse}
+td,th{padding:10px;border-bottom:1px solid #edf0f5;text-align:left;font-size:14px}
+th{background:#f8fafc}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;background:#eef3ff;font-size:12px}
+"""
+
+LOGIN_TMPL = """
+<!doctype html><html><head><meta charset="utf-8"><title>Sriya Web Intelligence — Login</title>
+<style>{{ css }}</style></head><body><div class="wrap" style="max-width:420px">
+<h1>Sriya Web Intelligence</h1><p class="muted">Sign in to continue</p>
+{% with messages = get_flashed_messages() %}{% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}{% endwith %}
+<div class="card">
+<form method="post">
+<input type="text" name="username" placeholder="Username" required>
+<input type="password" name="password" placeholder="Password" required>
+<button type="submit">Log in</button>
+</form>
+</div></div></body></html>
+"""
+
+HOME_TMPL = """
+<!doctype html><html><head><meta charset="utf-8"><title>Sriya Web Intelligence — Home</title>
+<style>{{ css }}</style></head><body><div class="wrap">
+<div class="topbar"><h1>Sriya Web Intelligence</h1><a href="{{ url_for('logout') }}">Log out</a></div>
+<p class="muted">Choose what you want to generate a report from.</p>
+<div class="options">
+<a class="option" href="{{ url_for('dashboard') }}"><div class="emoji">📊</div><h3>Dashboard</h3><p class="muted">Browse all past reports</p></a>
+<a class="option" href="{{ url_for('pdf_form') }}"><div class="emoji">📄</div><h3>PDF</h3><p class="muted">Upload a dashboard PDF/image to ingest</p></a>
+<a class="option" href="{{ url_for('website_form') }}"><div class="emoji">🔗</div><h3>Website Link</h3><p class="muted">Scan a product page URL</p></a>
+</div></div></body></html>
+"""
+
+WEBSITE_FORM_TMPL = """
+<!doctype html><html><head><meta charset="utf-8"><title>Scan a website link</title>
+<style>{{ css }}</style></head><body><div class="wrap">
+<div class="topbar"><h1>Scan a website link</h1><a href="{{ url_for('home') }}">&larr; Home</a></div>
+<p class="muted">Runs the full audit: semantic issues, spelling, SEO, accessibility, security, performance and conversion -- then produces a dashboard report (JSON + HTML + PDF).</p>
+{% with messages = get_flashed_messages() %}{% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}{% endwith %}
+<div class="card">
+<form method="post">
+<input type="url" name="url" placeholder="https://example.com/product/abc" required>
+<label style="font-size:14px;color:#687386"><input type="checkbox" name="use_llm" style="width:auto"> Use LLM enrichment (needs an API key configured in .env)</label>
+<button type="submit">Run scan</button>
+</form>
+</div></div></body></html>
+"""
+
+PDF_FORM_TMPL = """
+<!doctype html><html><head><meta charset="utf-8"><title>Ingest a dashboard PDF</title>
+<style>{{ css }}</style></head><body><div class="wrap">
+<div class="topbar"><h1>Upload a dashboard PDF</h1><a href="{{ url_for('home') }}">&larr; Home</a></div>
+<p class="muted">Accepts .pdf, .png, .jpg, .jpeg, .webp, .bmp, .tiff. Extracts text/metrics via the OCR pipeline and adds it to the searchable corpus, then produces a dashboard summary report.</p>
+{% with messages = get_flashed_messages() %}{% for m in messages %}<div class="flash">{{ m }}</div>{% endfor %}{% endwith %}
+<div class="card">
+<form method="post" enctype="multipart/form-data">
+<input type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.webp,.bmp,.tiff" required>
+<button type="submit">Ingest &amp; generate report</button>
+</form>
+</div></div></body></html>
+"""
+
+DASHBOARD_TMPL = """
+<!doctype html><html><head><meta charset="utf-8"><title>Dashboard</title>
+<style>{{ css }}</style></head><body><div class="wrap">
+<div class="topbar"><h1>Dashboard</h1><a href="{{ url_for('home') }}">&larr; Home</a></div>
+<p class="muted">{{ entries|length }} report(s) generated so far.</p>
+<div class="card">
+<table>
+<tr><th>When</th><th>Type</th><th>Target</th><th>Health</th><th>Files</th></tr>
+{% for e in entries %}
+<tr>
+<td>{{ e.created_at }}</td>
+<td><span class="pill">{{ e.type }}</span></td>
+<td>{{ e.target }}</td>
+<td>{{ e.overall_health if e.overall_health is not none else '-' }}</td>
+<td>
+{% if e.html %}<a href="{{ url_for('serve_file', subpath=e.html) }}" target="_blank">HTML</a>{% endif %}
+{% if e.pdf %} · <a href="{{ url_for('serve_file', subpath=e.pdf) }}" target="_blank">PDF</a>{% endif %}
+{% if e.json %} · <a href="{{ url_for('serve_file', subpath=e.json) }}" target="_blank">JSON</a>{% endif %}
+</td>
+</tr>
+{% else %}
+<tr><td colspan="5" class="muted">No reports yet. Try "Website Link" or "PDF" from the home page.</td></tr>
+{% endfor %}
+</table>
+</div></div></body></html>
+"""
+
+ERROR_TMPL = """
+<!doctype html><html><head><meta charset="utf-8"><title>Error</title>
+<style>{{ css }}</style></head><body><div class="wrap">
+<div class="topbar"><h1>Something went wrong</h1><a href="{{ url_for('home') }}">&larr; Home</a></div>
+<div class="card"><p>{{ message }}</p>{% if detail %}<pre style="white-space:pre-wrap;font-size:12px;color:#687386">{{ detail }}</pre>{% endif %}</div>
+</div></body></html>
+"""
+
+
+def render(tmpl, **ctx):
+    return render_template_string(tmpl, css=BASE_CSS, **ctx)
+
+
+# -------------------------------------------------------------- routes ----
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        u = request.form.get("username", "")
+        p = request.form.get("password", "")
+        if secrets.compare_digest(u, WEBAPP_USERNAME) and secrets.compare_digest(p, WEBAPP_PASSWORD):
+            session["logged_in"] = True
+            session["username"] = u
+            return redirect(request.args.get("next") or url_for("home"))
+        flash("Invalid username or password.")
+    return render(LOGIN_TMPL)
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("login"))
+
+
+@app.route("/")
+@login_required
+def home():
+    return render(HOME_TMPL)
+
+
+@app.route("/dashboard")
+@login_required
+def dashboard():
+    return render(DASHBOARD_TMPL, entries=_load_index())
+
+
+@app.route("/files/<path:subpath>")
+@login_required
+def serve_file(subpath):
+    return send_from_directory(REPORTS_DIR, subpath)
+
+
+@app.route("/website", methods=["GET", "POST"])
+@login_required
+def website_form():
+    if request.method == "GET":
+        return render(WEBSITE_FORM_TMPL)
+
+    url_in = (request.form.get("url") or "").strip()
+    use_llm = bool(request.form.get("use_llm"))
+    if not url_in:
+        flash("Enter a URL to scan.")
+        return redirect(url_for("website_form"))
+
+    try:
+        core_report = core.scan_url(url_in, use_llm=use_llm, force_render=False, check_links=False)
+        if core_report.skipped:
+            flash(f"Skipped: {core_report.skip_reason}")
+            return redirect(url_for("website_form"))
+
+        soup, content, _used_render = core.fetch_and_extract(url_in, force_render=False)
+        response, _err = pro.fetch_headers(url_in)
+        report = pro.build_report(url_in, soup, content, response, core_report)
+
+        rid, out_dir = _new_report_dir()
+        rendered_html = pro.html_report(report)
+        (out_dir / "report.html").write_text(rendered_html, encoding="utf-8")
+        (out_dir / "report.json").write_text(
+            json.dumps(asdict(report), indent=2, ensure_ascii=False), encoding="utf-8")
+        pdf_path = out_dir / "report.pdf"
+        pdf_export.try_html_to_pdf(rendered_html, pdf_path, label="website scan")
+
+        _add_report({
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "type": "website",
+            "target": url_in,
+            "overall_health": report.scores.get("overall_health_score"),
+            "html": f"{rid}/report.html",
+            "json": f"{rid}/report.json",
+            "pdf": f"{rid}/report.pdf" if pdf_path.exists() else None,
+        })
+        return redirect(url_for("serve_file", subpath=f"{rid}/report.html"))
+    except Exception as e:
+        return render(ERROR_TMPL, message=f"Scan failed for {url_in}: {e}",
+                       detail=traceback.format_exc()), 500
+
+
+@app.route("/pdf", methods=["GET", "POST"])
+@login_required
+def pdf_form():
+    if request.method == "GET":
+        return render(PDF_FORM_TMPL)
+
+    f = request.files.get("file")
+    if not f or not f.filename:
+        flash("Choose a file to upload.")
+        return redirect(url_for("pdf_form"))
+    ext = Path(f.filename).suffix.lower()
+    if ext not in ALLOWED_UPLOAD_EXT:
+        flash(f"Unsupported file type: {ext}")
+        return redirect(url_for("pdf_form"))
+
+    try:
+        safe_name = secure_filename(f.filename)
+        saved_path = UPLOADS_DIR / f"{uuid.uuid4().hex[:8]}_{safe_name}"
+        f.save(saved_path)
+
+        chunks, result = ingest.ingest_file(str(saved_path))
+        corpus_size = ingest.add_to_corpus(chunks, ingest.DEFAULT_CORPUS_PATH)
+
+        rid, out_dir = _new_report_dir()
+        rendered_html = _pdf_dashboard_html(safe_name, chunks, result, corpus_size)
+        (out_dir / "report.html").write_text(rendered_html, encoding="utf-8")
+        (out_dir / "report.json").write_text(
+            json.dumps({"result": asdict(result), "chunks": [asdict(c) for c in chunks]},
+                       indent=2, ensure_ascii=False), encoding="utf-8")
+        pdf_path = out_dir / "report.pdf"
+        pdf_export.try_html_to_pdf(rendered_html, pdf_path, label="PDF ingestion report")
+
+        _add_report({
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "type": "pdf",
+            "target": safe_name,
+            "overall_health": None,
+            "html": f"{rid}/report.html",
+            "json": f"{rid}/report.json",
+            "pdf": f"{rid}/report.pdf" if pdf_path.exists() else None,
+        })
+        return redirect(url_for("serve_file", subpath=f"{rid}/report.html"))
+    except Exception as e:
+        return render(ERROR_TMPL, message=f"PDF ingestion failed for {f.filename}: {e}",
+                       detail=traceback.format_exc()), 500
+
+
+def _pdf_dashboard_html(name, chunks, result: "ingest.IngestResult", corpus_size: int) -> str:
+    from html import escape
+    metrics = [m for c in chunks for m in c.metrics_found]
+    rows = "".join(
+        f"<tr><td>{c.page}</td><td>{escape(c.extraction_method)}</td>"
+        f"<td>{escape(c.text[:160])}</td><td>{escape(', '.join(c.metrics_found) or '-')}</td></tr>"
+        for c in chunks[:200]
+    )
+    warnings = "".join(f"<li>{escape(w)}</li>" for w in result.warnings) or "<li>None</li>"
+    return f'''<!doctype html><html><head><meta charset="utf-8"><title>Dashboard PDF Ingestion — {escape(name)}</title>
+<style>{BASE_CSS}</style></head><body><div class="wrap">
+<h1>Dashboard PDF Ingestion</h1><div class="muted">{escape(name)} · {datetime.now(timezone.utc).isoformat()}</div>
+<div class="options" style="grid-template-columns:repeat(4,1fr)">
+<div class="card"><div class="muted">Pages</div><h2>{result.pages}</h2></div>
+<div class="card"><div class="muted">Chunks added</div><h2>{result.chunks_added}</h2></div>
+<div class="card"><div class="muted">Metrics found</div><h2>{len(metrics)}</h2></div>
+<div class="card"><div class="muted">Corpus size (total)</div><h2>{corpus_size}</h2></div>
+</div>
+<div class="card"><h2>Extraction methods</h2><ul>{"".join(f"<li>{escape(k)}: {v}</li>" for k, v in result.extraction_method_summary.items()) or "<li>None</li>"}</ul></div>
+<div class="card"><h2>Warnings</h2><ul>{warnings}</ul></div>
+<div class="card"><h2>Extracted content</h2><table><tr><th>Page</th><th>Method</th><th>Text</th><th>Metrics found</th></tr>{rows}</table></div>
+</div></body></html>'''
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("WEBAPP_PORT", "8005"))
+    app.run(host="0.0.0.0", port=port, debug=False)

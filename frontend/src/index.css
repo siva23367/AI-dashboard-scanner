@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: #2b5fff33;
+  }
+  :focus-visible {
+    outline: 2px solid #2b5fff;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* ---- signature: scan-sweep loading beam --------------------------- */
+  .scan-sweep-track {
+    position: relative;
+    overflow: hidden;
+    background: #101a3f;
+  }
+  .scan-sweep-beam {
+    position: absolute;
+    inset: 0;
+    width: 40%;
+    background: linear-gradient(90deg, transparent, #4f7bff88, #9fc2ffcc, #4f7bff88, transparent);
+  }
+
+  /* ---- signature: viewfinder corner brackets ------------------------ */
+  .viewfinder {
+    position: relative;
+  }
+  .viewfinder::before,
+  .viewfinder::after,
+  .viewfinder > .vf-tr,
+  .viewfinder > .vf-br {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-color: #2b5fff;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+  }
+  .viewfinder::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-color: #2b5fff;
+  }
+  .viewfinder::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-color: #2b5fff;
+  }
+  .viewfinder > .vf-tr {
+    top: -1px;
+    right: -1px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+  }
+  .viewfinder > .vf-br {
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+  }
+  .viewfinder:hover > .vf-tr,
+  .viewfinder:hover > .vf-br,
+  .viewfinder:focus-within > .vf-tr,
+  .viewfinder:focus-within > .vf-br {
+    opacity: 1;
+  }
+  .viewfinder:hover::before,
+  .viewfinder:hover::after,
+  .viewfinder:focus-within::before,
+  .viewfinder:focus-within::after {
+    opacity: 1;
+  }
+
+  .kpi-readout {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  .live-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: #17b884;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scan-sweep-beam {
+    animation: none !important;
+  }
+  .animate-sweep,
+  .animate-fadeUp,
+  .animate-pulseDot {
+    animation: none !important;
+  }
+}

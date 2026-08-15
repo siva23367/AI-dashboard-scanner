@@ -1,0 +1,3208 @@
+[
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Executive Summary",
+    "bbox": [
+      193,
+      168,
+      535,
+      202
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Product Performance Dashboard",
+    "bbox": [
+      159,
+      266,
+      1391,
+      324
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Product-level Buyers, Revenue & Conversion \u2014 LNM-Al",
+    "bbox": [
+      156,
+      370,
+      1219,
+      409
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Total Products Tracked",
+    "bbox": [
+      144,
+      574,
+      510,
+      602
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "4 421",
+    "bbox": [
+      141,
+      663,
+      981,
+      709
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "421"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Product Performance",
+    "bbox": [
+      95,
+      880,
+      556,
+      914
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Product Category",
+    "bbox": [
+      138,
+      1014,
+      978,
+      1054
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Samsung Galaxy 524 Smartphones",
+    "bbox": [
+      138,
+      1155,
+      1042,
+      1195
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "524"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "iPhone 15 Smartphones",
+    "bbox": [
+      138,
+      1296,
+      1042,
+      1335
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "OnePlus 12 Smartphones",
+    "bbox": [
+      134,
+      1436,
+      1042,
+      1476
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "boAt Airdopes 141 Audio",
+    "bbox": [
+      138,
+      1577,
+      908,
+      1616
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "141"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Al BUSINESS EXPLANATION",
+    "bbox": [
+      156,
+      1818,
+      697,
+      1849
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Total Buyers (All Products)",
+    "bbox": [
+      874,
+      574,
+      1299,
+      608
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Buyers",
+    "bbox": [
+      1268,
+      1014,
+      1397,
+      1054
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "125",
+    "bbox": [
+      1268,
+      1155,
+      1329,
+      1186
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "125"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "168",
+    "bbox": [
+      1268,
+      1296,
+      1329,
+      1326
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "168"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "56",
+    "bbox": [
+      1268,
+      1436,
+      1308,
+      1467
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "70",
+    "bbox": [
+      1268,
+      1577,
+      1308,
+      1607
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Total Revenue",
+    "bbox": [
+      1604,
+      574,
+      1834,
+      602
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Rs.42,18,000",
+    "bbox": [
+      1604,
+      663,
+      2002,
+      718
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "Rs.42,18,000"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Non-Buyers",
+    "bbox": [
+      1543,
+      1014,
+      1760,
+      1054
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "2,475",
+    "bbox": [
+      1543,
+      1155,
+      1638,
+      1192
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2,475"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "2,142",
+    "bbox": [
+      1543,
+      1296,
+      1638,
+      1332
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2,142"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "1,192",
+    "bbox": [
+      1543,
+      1436,
+      1638,
+      1473
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "1,192"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "930",
+    "bbox": [
+      1543,
+      1577,
+      1604,
+      1607
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "930"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Conv. Rate",
+    "bbox": [
+      1880,
+      1014,
+      2078,
+      1045
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "40%",
+    "bbox": [
+      1876,
+      1155,
+      1965,
+      1186
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "7.3%",
+    "bbox": [
+      1880,
+      1296,
+      1965,
+      1326
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "7.3"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "46%",
+    "bbox": [
+      1876,
+      1436,
+      1965,
+      1467
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "7.0%",
+    "bbox": [
+      1880,
+      1577,
+      1965,
+      1607
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "7.0"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "iPhone 15 has the strongest conversion rate (7.3%) and the highest revenue of the tracked products,",
+    "bbox": [
+      156,
+      1904,
+      1916,
+      1943
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "7.3"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "despite fewer sessions than Samsung Galaxy S24, suggesting stronger purchase intent per visitor.",
+    "bbox": [
+      156,
+      1965,
+      1883,
+      2004
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Samsung Galaxy 524 drives the most sessions but converts below the product-line average (4.6% vs 5.65%),",
+    "bbox": [
+      156,
+      2026,
+      2054,
+      2066
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "524",
+      "4.6",
+      "5.65"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "indicating a browsing-to-buying gap worth investigating (pricing, PDP content, or competing listings).",
+    "bbox": [
+      156,
+      2087,
+      1907,
+      2127
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Source: mock_product",
+    "bbox": [
+      2338,
+      168,
+      2735,
+      202
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Avg Conversion Rate",
+    "bbox": [
+      2332,
+      574,
+      2674,
+      608
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "5.6%",
+    "bbox": [
+      2335,
+      663,
+      2485,
+      709
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "5.6"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Revenue",
+    "bbox": [
+      2185,
+      1014,
+      2347,
+      1045
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Rs.8.75,000",
+    "bbox": [
+      2185,
+      1155,
+      2396,
+      1192
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "Rs.8.75",
+      "000"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Rs.20,16,000",
+    "bbox": [
+      2185,
+      1296,
+      2417,
+      1332
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "Rs.20,16,000"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Rs.6,38,000",
+    "bbox": [
+      2185,
+      1436,
+      2396,
+      1473
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "Rs.6,38,000"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Rs.6,89,000",
+    "bbox": [
+      2185,
+      1577,
+      2396,
+      1613
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "Rs.6,89,000"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "Sessions",
+    "bbox": [
+      2644,
+      1014,
+      2812,
+      1045
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "2,600",
+    "bbox": [
+      2644,
+      1155,
+      2738,
+      1192
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2,600"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "2,310",
+    "bbox": [
+      2644,
+      1296,
+      2738,
+      1332
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2,310"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "1,250",
+    "bbox": [
+      2644,
+      1436,
+      2738,
+      1473
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "1,250"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/mock_product_dashboard.pdf",
+    "dashboard_name": "mock_product_dashboard",
+    "page": 1,
+    "text": "1,000",
+    "bbox": [
+      2644,
+      1577,
+      2738,
+      1613
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "1,000"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current Digital Experience Index",
+    "bbox": [
+      145,
+      211,
+      764,
+      252
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "(DXI) Dashboard",
+    "bbox": [
+      146,
+      259,
+      460,
+      297
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "\u00a7 Dataset Overview",
+    "bbox": [
+      105,
+      465,
+      295,
+      483
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "sriya_ai_ga4_master_dataset_v2",
+    "bbox": [
+      124,
+      578,
+      481,
+      601
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "_hard_5000.csv",
+    "bbox": [
+      123,
+      616,
+      303,
+      636
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "@\u00ae Key Performance Indicators",
+    "bbox": [
+      102,
+      719,
+      381,
+      735
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "we",
+    "bbox": [
+      135,
+      808,
+      159,
+      830
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current Dx!",
+    "bbox": [
+      122,
+      870,
+      202,
+      878
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "0.3",
+    "bbox": [
+      123,
+      895,
+      175,
+      920
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "0.3"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Direct Upload from UI",
+    "bbox": [
+      546,
+      578,
+      776,
+      601
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current Unique Buyer %",
+    "bbox": [
+      549,
+      870,
+      716,
+      881
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "23.91%",
+    "bbox": [
+      549,
+      895,
+      668,
+      920
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "23.91"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "4455",
+    "bbox": [
+      966,
+      579,
+      1025,
+      596
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "4455"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current Unique Buyer",
+    "bbox": [
+      975,
+      870,
+      1125,
+      881
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "1,065",
+    "bbox": [
+      976,
+      895,
+      1064,
+      927
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "1,065"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current DXI Sub-Scores",
+    "bbox": [
+      146,
+      1001,
+      347,
+      1012
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Marketing Current DXI",
+    "bbox": [
+      209,
+      1092,
+      365,
+      1104
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "0.54",
+    "bbox": [
+      210,
+      1116,
+      290,
+      1143
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "0.54"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "0.98",
+    "bbox": [
+      551,
+      1126,
+      631,
+      1153
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "0.98"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "\u00a9 Model Performance",
+    "bbox": [
+      125,
+      1261,
+      318,
+      1277
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Accuracy",
+    "bbox": [
+      152,
+      1337,
+      232,
+      1353
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Target: is_buyer",
+    "bbox": [
+      1587,
+      239,
+      1705,
+      254
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "172",
+    "bbox": [
+      1387,
+      579,
+      1424,
+      596
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "172"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "2",
+    "bbox": [
+      1422,
+      810,
+      1431,
+      819
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": ")",
+    "bbox": [
+      1418,
+      820,
+      1438,
+      830
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current Non Buyer",
+    "bbox": [
+      1402,
+      870,
+      1531,
+      881
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "3,390",
+    "bbox": [
+      1402,
+      895,
+      1498,
+      927
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "3,390"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Demographic Current",
+    "bbox": [
+      551,
+      1082,
+      700,
+      1094
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Engagement Current DX!",
+    "bbox": [
+      891,
+      1092,
+      1063,
+      1104
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "* 2.00 e",
+    "bbox": [
+      825,
+      1104,
+      1192,
+      1143
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2.00"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "1 Current Business Status",
+    "bbox": [
+      980,
+      1262,
+      1211,
+      1275
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Precision",
+    "bbox": [
+      153,
+      1430,
+      230,
+      1443
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Recall",
+    "bbox": [
+      153,
+      1524,
+      203,
+      1536
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "76.79% Current DX!",
+    "bbox": [
+      821,
+      1336,
+      1104,
+      1350
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "76.79"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Current Unique Buyer %",
+    "bbox": [
+      1006,
+      1405,
+      1212,
+      1421
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "78.64%",
+    "bbox": [
+      819,
+      1429,
+      892,
+      1443
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "78.64"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Buyer Improvement",
+    "bbox": [
+      1007,
+      1473,
+      1172,
+      1489
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "95.43%",
+    "bbox": [
+      817,
+      1522,
+      892,
+      1537
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "95.43"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "a) Current Outcome Distribution (Buyers Vs Non-",
+    "bbox": [
+      124,
+      1696,
+      582,
+      1725
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "~ Buyers)",
+    "bbox": [
+      131,
+      1723,
+      225,
+      1740
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "\u00a9 Al BUSINESS EXPLANATION",
+    "bbox": [
+      124,
+      2186,
+      368,
+      2202
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Currently, 23.91% of the total users fall into the Buyers",
+    "bbox": [
+      125,
+      2229,
+      557,
+      2245
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "23.91"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "category, with the remainder in the Non-Buyers category.",
+    "bbox": [
+      124,
+      2257,
+      574,
+      2272
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "1. Buyers Vs Non-Buyers Distribution Across DX!",
+    "bbox": [
+      725,
+      1699,
+      1170,
+      1715
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "(0X1 DISTRIBUTION (10 BUCKETS)",
+    "bbox": [
+      872,
+      1782,
+      1036,
+      1792
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "@ AI BUSINESS EXPLANATION",
+    "bbox": [
+      693,
+      2165,
+      936,
+      2181
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "* Buyers are concentrated in higher DX! ranges, indicating that",
+    "bbox": [
+      674,
+      2209,
+      1171,
+      2225
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "higher digital experiences correlate with purchasing behavior,",
+    "bbox": [
+      694,
+      2235,
+      1176,
+      2252
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "effectively separating buyers from non-buyers.",
+    "bbox": [
+      693,
+      2261,
+      1058,
+      2277
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "+ Enhance digital experiences for non-buyers to convert them",
+    "bbox": [
+      674,
+      2288,
+      1164,
+      2304
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "by targeting improvements in lower DXI ranges where they",
+    "bbox": [
+      694,
+      2315,
+      1151,
+      2331
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "are concentrated.",
+    "bbox": [
+      693,
+      2343,
+      830,
+      2354
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "KPI/Behaviour Current",
+    "bbox": [
+      1233,
+      1081,
+      1391,
+      1092
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "6.03",
+    "bbox": [
+      1233,
+      1126,
+      1314,
+      1153
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "6.03"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "Transaction Current DX!",
+    "bbox": [
+      1575,
+      1092,
+      1743,
+      1101
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "5.25",
+    "bbox": [
+      1575,
+      1116,
+      1652,
+      1143
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "5.25"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "0.3",
+    "bbox": [
+      1715,
+      1336,
+      1746,
+      1350
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "0.3"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "23.91%%",
+    "bbox": [
+      1655,
+      1403,
+      1745,
+      1418
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "23.91"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "20.00%",
+    "bbox": [
+      1670,
+      1471,
+      1745,
+      1485
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "20.00"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "|\u201c 2. DXI Distribution: Total Buyers Vs Buyer %",
+    "bbox": [
+      1262,
+      1696,
+      1698,
+      1716
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "XI DISTRIBUTION: TOTAL BUYERS VS BUYER %",
+    "bbox": [
+      1391,
+      1790,
+      1622,
+      1797
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "\u2018yr O20 Bact Range",
+    "bbox": [
+      1457,
+      2073,
+      1552,
+      2080
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "\u00a9 Al BUSINESS EXPLANATION",
+    "bbox": [
+      1262,
+      2165,
+      1505,
+      2182
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "* The '0-2' DX! bucket has the largest buyer count of 540,",
+    "bbox": [
+      1242,
+      2208,
+      1704,
+      2225
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "540"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "representing 12.12",
+    "bbox": [
+      1263,
+      2236,
+      1397,
+      2252
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "12.12"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "\u20184 of the total audience, indicating that",
+    "bbox": [
+      1413,
+      2235,
+      1706,
+      2252
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "buyers are concentrated in the lower DX! range, suggesting",
+    "bbox": [
+      1263,
+      2261,
+      1728,
+      2277
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "potential challenges in customer engagement.",
+    "bbox": [
+      1263,
+      2289,
+      1619,
+      2304
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "+ To improve engagement, focus on strategies to convert users",
+    "bbox": [
+      1242,
+      2315,
+      1744,
+      2331
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 1,
+    "text": "in the \u20180-2' DXI range into buyers, such as targeted marketing",
+    "bbox": [
+      1263,
+      2342,
+      1745,
+      2358
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "campaigns or enhanced onboarding processes.",
+    "bbox": [
+      1262,
+      71,
+      1636,
+      88
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "= Feature Importance \u2014 Current Decision Tree",
+    "bbox": [
+      130,
+      199,
+      530,
+      214
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "* Feature Tree Importance Contribution %",
+    "bbox": [
+      215,
+      266,
+      1613,
+      279
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "1 Promocodeusagerate 47.32 52.01%",
+    "bbox": [
+      159,
+      322,
+      1465,
+      348
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "47.32",
+      "52.01"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "2 Newusers 20.67 22.72%",
+    "bbox": [
+      158,
+      392,
+      1465,
+      420
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "rs 20.67",
+      "22.72"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "3 Engagementtime Sec 15.11 16.61%",
+    "bbox": [
+      158,
+      466,
+      1465,
+      484
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "15.11",
+      "16.61"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "4 Percentscrolled 4.63 5.09%",
+    "bbox": [
+      158,
+      533,
+      1453,
+      560
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "4.63",
+      "5.09"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14.pdf",
+    "dashboard_name": "c512f897_screencapture-127-0-0-1-8005-agent2-dashboard-executive-2026-08-06-15_21_14",
+    "page": 2,
+    "text": "5 Marketingspendattributed 3.26 3.58%",
+    "bbox": [
+      158,
+      597,
+      1453,
+      631
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "3.26",
+      "3.58"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "a)",
+    "bbox": [
+      733,
+      376,
+      836,
+      408
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "AN.",
+    "bbox": [
+      691,
+      403,
+      878,
+      465
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "SITUS",
+    "bbox": [
+      716,
+      473,
+      848,
+      500
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "ered DAAC",
+    "bbox": [
+      409,
+      531,
+      660,
+      578
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Government of India",
+    "bbox": [
+      331,
+      582,
+      739,
+      614
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "SS DIQ MG0Y S'GsSS How",
+    "bbox": [
+      253,
+      722,
+      812,
+      774
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Unique Identification Authority of India",
+    "bbox": [
+      211,
+      776,
+      859,
+      810
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "2\u00a73985/ Enrolment No.: 2710/05009/04935",
+    "bbox": [
+      272,
+      829,
+      795,
+      863
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "3985",
+      "2710",
+      "05009",
+      "04935"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "To",
+    "bbox": [
+      272,
+      888,
+      291,
+      902
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "A Goass 26 Seb",
+    "bbox": [
+      272,
+      916,
+      432,
+      940
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Yarramsetti Siva Kumar",
+    "bbox": [
+      272,
+      949,
+      458,
+      963
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "S/O Venkata Satyanarayana,",
+    "bbox": [
+      273,
+      977,
+      490,
+      996
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "10-117,",
+    "bbox": [
+      273,
+      1005,
+      335,
+      1022
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "117"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "AKANA VARI THOTA,",
+    "bbox": [
+      272,
+      1032,
+      463,
+      1049
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "RAMANNAPALEM,",
+    "bbox": [
+      272,
+      1060,
+      438,
+      1076
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "VTC: Mogaltur,",
+    "bbox": [
+      272,
+      1087,
+      396,
+      1104
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "PO: Sitaramapuram,",
+    "bbox": [
+      272,
+      1115,
+      428,
+      1132
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "District: West Godavari,",
+    "bbox": [
+      272,
+      1142,
+      458,
+      1158
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "State: Andhra Pradesh,",
+    "bbox": [
+      273,
+      1169,
+      448,
+      1185
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "PIN Code: 534280",
+    "bbox": [
+      273,
+      1195,
+      423,
+      1210
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "534280"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Mobile: 9640797367",
+    "bbox": [
+      273,
+      1222,
+      444,
+      1237
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "9640797367"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Signat Verified",
+    "bbox": [
+      251,
+      1292,
+      390,
+      1323
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Diialy signeg bys Unique",
+    "bbox": [
+      251,
+      1329,
+      387,
+      1339
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Idenuncaton Auyphriy of ida",
+    "bbox": [
+      251,
+      1340,
+      389,
+      1349
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "06",
+    "bbox": [
+      251,
+      1350,
+      262,
+      1358
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Date: 2026.0772p 11:57:43",
+    "bbox": [
+      251,
+      1360,
+      373,
+      1368
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2026"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "er",
+    "bbox": [
+      251,
+      1370,
+      266,
+      1378
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Do eS Hos / Your Aadhaar No. :",
+    "bbox": [
+      207,
+      1548,
+      809,
+      1588
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "4736 8989 7813",
+    "bbox": [
+      389,
+      1594,
+      677,
+      1624
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "4736",
+      "8989",
+      "7813"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Vib 7 9113\u00b03509 4045 5875",
+    "bbox": [
+      395,
+      1622,
+      674,
+      1661
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "9113",
+      "3509",
+      "4045",
+      "5875"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "we esmsr5, =e 60229",
+    "bbox": [
+      317,
+      1673,
+      733,
+      1705
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "60229"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Aadhaar no. issued: 04/01/2012",
+    "bbox": [
+      182,
+      1850,
+      194,
+      2087
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2012"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Gods BS Hrb",
+    "bbox": [
+      406,
+      1860,
+      566,
+      1884
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Yarramsetti Siva Kumar",
+    "bbox": [
+      406,
+      1894,
+      592,
+      1908
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "%)8% &6/DOB: 12/03/2002",
+    "bbox": [
+      406,
+      1921,
+      639,
+      1945
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2002"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "DwoApeSo/ MALE",
+    "bbox": [
+      406,
+      1954,
+      548,
+      1971
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "BOE OSE MQo Hew ArGdo, PoHsho Sar Hs dh $s",
+    "bbox": [
+      415,
+      2003,
+      868,
+      2024
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Hod. BB GNS6aS Argdo adairhoard (wSGS Harcisdc",
+    "bbox": [
+      415,
+      2023,
+      876,
+      2042
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Oo AR SE / VSPS XML aos), 3y,D08).",
+    "bbox": [
+      415,
+      2045,
+      742,
+      2066
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Aadhaar is proof of identity, not of citizenship",
+    "bbox": [
+      413,
+      2073,
+      799,
+      2090
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "or date of birth. It should be used with verification (online",
+    "bbox": [
+      414,
+      2095,
+      894,
+      2111
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "authentication, or scanning of QR code / offline XML).",
+    "bbox": [
+      414,
+      2117,
+      856,
+      2134
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "4736 8989 7813",
+    "bbox": [
+      397,
+      2166,
+      639,
+      2192
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "4736",
+      "8989",
+      "7813"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Details as on: 20/07/2026",
+    "bbox": [
+      959,
+      1880,
+      971,
+      2067
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "2026"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "water aa",
+    "bbox": [
+      1029,
+      465,
+      1093,
+      495
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Government of India AADHAAR",
+    "bbox": [
+      995,
+      479,
+      1655,
+      502
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "dSrerdan / INFORMATION",
+    "bbox": [
+      1160,
+      552,
+      1501,
+      575
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Bord WSO MGosy Garay, POAGo Sao DGA SS 8 wc. MHa SH",
+    "bbox": [
+      1052,
+      608,
+      1651,
+      635
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "dO ward Sond yb RAvOyoDS Nwossees* D5 ya) DBs 3d",
+    "bbox": [
+      1052,
+      631,
+      1651,
+      668
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "ago C8), Caray eaqrdo oo BB) DAPEPGOD VGPOOE Gotw0O.",
+    "bbox": [
+      1051,
+      662,
+      1627,
+      696
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "& ward Gawd UIDAI NavM0ds Hardsoe Dy axGo GSTS",
+    "bbox": [
+      1052,
+      699,
+      1627,
+      727
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "LSrcSIn oC Sar oir Ybvs* wocvererd\u00ae a) mAadhaar",
+    "bbox": [
+      1052,
+      727,
+      1625,
+      756
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "So werd AR 97,56 APSA adairhod Tar www.uidai.gov.ins*",
+    "bbox": [
+      1052,
+      756,
+      1624,
+      784
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "97,56"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "wocrertewS Gi) 584 QR SFE 646 akrd adodrAod QR SE",
+    "bbox": [
+      1052,
+      784,
+      1633,
+      803
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "584",
+      "646"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "3,208 GRGOr GyOsboard.",
+    "bbox": [
+      1052,
+      813,
+      1283,
+      840
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "3,208"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "ord QA;SBSO SOoiv WAIHI.",
+    "bbox": [
+      1052,
+      850,
+      1399,
+      876
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "word Sard SS HA Add OB 10 doddywro sores G02",
+    "bbox": [
+      1052,
+      885,
+      1601,
+      912
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "d.6akod DOPAPH How0dos HPO word So SDS60er9.",
+    "bbox": [
+      1052,
+      909,
+      1602,
+      933
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "DDS Haba, AOatn Heddcess Saranren/ASdvay Tosscioes*",
+    "bbox": [
+      1052,
+      945,
+      1606,
+      974
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "ord DH HS avocodvo8.",
+    "bbox": [
+      1052,
+      971,
+      1300,
+      993
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Do BBS S006 Svat si-Svowd OAD warb S* VAS SenGod.",
+    "bbox": [
+      1052,
+      1007,
+      1646,
+      1032
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "ward Sdva Yodotos. mAadhaar air bio SSSE SxvS'od.",
+    "bbox": [
+      1052,
+      1039,
+      1600,
+      1072
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "BBE /BAPIBEVAD GAMMA HD SHdAD IPOosser-NS",
+    "bbox": [
+      1052,
+      1076,
+      1604,
+      1111
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "PE /OSWE VIS /OAPHEy HHI GHCIPHodsoc.",
+    "bbox": [
+      1052,
+      1105,
+      1521,
+      1133
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "warden 83 Hog GSyVWErP HH.8 Todsovd Gotwod",
+    "bbox": [
+      1052,
+      1141,
+      1556,
+      1171
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Aadhaar is proof of identity, not of citizenship or date of birth (DOB). DOB",
+    "bbox": [
+      1052,
+      1186,
+      1652,
+      1205
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "is based on information supported by proof of DOB document specified in",
+    "bbox": [
+      1052,
+      1209,
+      1652,
+      1236
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "regulations, submitted by Aadhaar number holder.",
+    "bbox": [
+      1052,
+      1240,
+      1463,
+      1259
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "This Aadhaar letter should be verified through either online",
+    "bbox": [
+      1053,
+      1271,
+      1550,
+      1290
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "authentication by UIDAI-appointed authentication agency or QR code",
+    "bbox": [
+      1052,
+      1298,
+      1639,
+      1317
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "scanning using mAadhaar or Aadhaar QR Scanner app available in",
+    "bbox": [
+      1052,
+      1325,
+      1622,
+      1344
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "app stores or using secure QR code reader app available on",
+    "bbox": [
+      1052,
+      1351,
+      1564,
+      1371
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "www.uidai.gov.in.",
+    "bbox": [
+      1052,
+      1379,
+      1197,
+      1397
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Aadhaar is unique and secure.",
+    "bbox": [
+      1053,
+      1410,
+      1311,
+      1428
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Documents to support identity and address should be updated in",
+    "bbox": [
+      1054,
+      1441,
+      1600,
+      1460
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Aadhaar after every 10 years from date of enrolment for Aadhaar.",
+    "bbox": [
+      1052,
+      1467,
+      1606,
+      1487
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Aadhaar helps you avail of various Government and Non-",
+    "bbox": [
+      1053,
+      1499,
+      1541,
+      1518
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Government benefits/services.",
+    "bbox": [
+      1052,
+      1525,
+      1309,
+      1541
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Keep your mobile number and email id updated in Aadhaar.",
+    "bbox": [
+      1053,
+      1557,
+      1558,
+      1576
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Download mAadhaar app to avail of Aadhaar services.",
+    "bbox": [
+      1054,
+      1588,
+      1514,
+      1607
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Use the feature of Lock/Unlock Aadhaar/biometrics to ensure",
+    "bbox": [
+      1054,
+      1619,
+      1570,
+      1635
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "security when not using Aadhaar/biometrics.",
+    "bbox": [
+      1052,
+      1646,
+      1426,
+      1665
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Entities seeking Aadhaar are obligated to seek consent.",
+    "bbox": [
+      1054,
+      1677,
+      1525,
+      1697
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Dbwsr:",
+    "bbox": [
+      986,
+      1855,
+      1068,
+      1869
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "S/O SoS SeSgaroravea, G6 Bo 10-117, esSS ard",
+    "bbox": [
+      986,
+      1871,
+      1407,
+      1891
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "117"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "So THY 0, Bo0tg75, NEPOSDAYSO, SQ",
+    "bbox": [
+      982,
+      1887,
+      1374,
+      1931
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "8,",
+    "bbox": [
+      1034,
+      1913,
+      1049,
+      1929
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "es0g\u00a7 505 - 534280",
+    "bbox": [
+      986,
+      1919,
+      1147,
+      1956
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "505",
+      "534280"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Address:",
+    "bbox": [
+      986,
+      1967,
+      1053,
+      1981
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "S/O Venkata Satyanarayana, 10-117, AKANA VARI",
+    "bbox": [
+      986,
+      1986,
+      1397,
+      2005
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "117"
+    ]
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "THOTA, RAMANNAPALEM, Mogaltur, PO:",
+    "bbox": [
+      986,
+      2006,
+      1342,
+      2024
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Sitaramapuram, DIST: West Godavari,",
+    "bbox": [
+      986,
+      2025,
+      1285,
+      2043
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": []
+  },
+  {
+    "source_file": "/home/sky/Videos/files/uploads/e8e41507_Aadhaar.pdf",
+    "dashboard_name": "e8e41507_Aadhaar",
+    "page": 1,
+    "text": "Andhra Pradesh - 534280",
+    "bbox": [
+      986,
+      2044,
+      1189,
+      2058
+    ],
+    "extraction_method": "ocr",
+    "metrics_found": [
+      "534280"
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+Accessibility and semantic HTML issues should be reported only when there is strong evidence that a genuine usability, accessibility, or SEO problem exists.
+
+Headings
+
+* A page should normally have a clear primary heading that represents the main subject of the page.
+* Multiple <h1> elements should only be flagged when they appear to represent competing primary page topics.
+* Modern HTML5 layouts sometimes contain multiple valid <h1> elements inside different sections. Do not automatically treat every multiple-<h1> page as an error.
+* Missing <h1> should only be reported when the page clearly contains substantial content and lacks any meaningful top-level heading.
+* Heading levels should follow a logical hierarchy. Large jumps such as h2 directly to h4 or h3 directly to h5 may confuse assistive technologies and should be reported.
+
+Interactive Elements
+
+* Elements that perform actions should be implemented as accessible interactive controls.
+* A clickable <div> or <span> should only be flagged when there is evidence that it acts as a button, link, menu item, tab, or other interactive control.
+* Modern JavaScript frameworks often attach event handlers programmatically rather than through inline onclick attributes. Consider ARIA roles, tabindex values, keyboard support, and visual button behavior before reporting an issue.
+* If an element behaves like a button but is not keyboard accessible, report it.
+
+Buttons and Calls-to-Action
+
+* Important actions such as Add to Cart, Buy Now, Checkout, Subscribe, Submit, Sign In, Register, or Download should be implemented using accessible controls.
+* Do not flag plain text that merely contains these phrases unless it is clearly intended to function as an action element.
+
+Images
+
+* Images that convey information must have meaningful alternative text.
+* Decorative images may use alt="" and should not be reported.
+* Tracking pixels, analytics images, invisible assets, icons, logos repeated throughout navigation, and other non-content images should generally not be treated as missing-alt violations.
+* Alt text should describe the image content rather than using filenames such as image1.jpg, photo.png, or img123.
+
+Links
+
+* Anchor elements intended for navigation should contain a valid href attribute.
+* If an anchor is being used purely as a JavaScript action, recommend replacing it with a button.
+* Do not flag framework-generated placeholder links unless they create an actual accessibility problem.
+
+Forms
+
+* Form controls should have an accessible name through one of the following:
+
+  * <label for="...">
+  * Wrapped <label>
+  * aria-label
+  * aria-labelledby
+* Placeholder text alone is weaker than a label and may be reported as a warning rather than an error.
+* Inputs that already have an accessible name should not be flagged.
+
+Tables
+
+* Tables used for tabular data should include appropriate header cells (<th>).
+* Header cells should ideally include scope attributes where applicable.
+* Layout tables should only be reported when they create accessibility or semantic problems.
+* Simple data tables without scope attributes may warrant informational guidance rather than an error.
+
+General Principle
+
+* Prefer high-confidence findings over aggressive reporting.
+* Avoid false positives whenever the page structure could reasonably be valid.
+* Consider modern frontend frameworks, accessibility techniques, ARIA attributes, and dynamic rendering before reporting issues.
+* Report only issues that are likely to affect accessibility, usability, SEO, or user experience in a meaningful way.
