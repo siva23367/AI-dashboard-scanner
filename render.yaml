@@ -26,7 +26,4 @@ services:
         sync: false          # e.g. https://your-app.vercel.app -- set after your first Vercel deploy
       - key: CROSS_ORIGIN_COOKIES
         value: "1"
-    disk:
-      name: sriya-data
-      mountPath: /data
-      sizeGB: 1
+    
