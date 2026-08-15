@@ -3,7 +3,7 @@ import { UploadCloud, FileText, ExternalLink, Download, RotateCcw, Search } from
 import { PageHero, Card, KpiCard, Button, Field, inputClass, ScanSweepPanel, EmptyState } from "../components/ui";
 import { AskResultPanel } from "../components/results";
 import { useToast } from "../ToastContext";
-import { api } from "../api";
+import { api, resolveUrl } from "../api";
 
 const ACCEPT = ".pdf,.png,.jpg,.jpeg,.webp,.bmp,.tiff";
 
@@ -127,14 +127,14 @@ export default function PdfIngest() {
               </div>
               <div className="flex gap-2 shrink-0">
                 {data.html_url && (
-                  <a href={data.html_url} target="_blank" rel="noopener noreferrer">
+                  <a href={resolveUrl(data.html_url)} target="_blank" rel="noopener noreferrer">
                     <Button variant="ghost">
                       <ExternalLink size={14} /> Full report
                     </Button>
                   </a>
                 )}
                 {data.pdf_url && (
-                  <a href={data.pdf_url} target="_blank" rel="noopener noreferrer">
+                  <a href={resolveUrl(data.pdf_url)} target="_blank" rel="noopener noreferrer">
                     <Button variant="ghost">
                       <Download size={14} /> PDF
                     </Button>

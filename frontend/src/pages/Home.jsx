@@ -5,7 +5,7 @@ import { PageHero, Card, KpiCard, EmptyState } from "../components/ui";
 import { TypeBadge } from "../components/ui";
 import { useAuth } from "../AuthContext";
 import { useToast } from "../ToastContext";
-import { api } from "../api";
+import { api, resolveUrl } from "../api";
 
 const ACTIONS = [
   {
@@ -124,7 +124,7 @@ export default function Home() {
             {entries.slice(0, 6).map((e, i) => (
               <a
                 key={i}
-                href={e.html_url}
+                href={resolveUrl(e.html_url)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 flex items-center gap-3 hover:bg-slate-50/80 transition-colors"

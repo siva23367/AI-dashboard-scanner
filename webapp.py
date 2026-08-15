@@ -61,6 +61,41 @@ ALLOWED_UPLOAD_EXT = {".pdf", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tiff"}
 app = Flask(__name__)
 app.secret_key = os.environ.get("WEBAPP_SECRET_KEY") or secrets.token_hex(32)
 
+# --- Cross-origin setup (Vercel frontend + Render/other backend host) -----
+# Only needed when the frontend is hosted on a *different* origin than this
+# Flask app (e.g. https://your-app.vercel.app calling https://your-api.onrender.com).
+# When the frontend is served by this same Flask app instead (the /app route
+# below, same origin), none of this is required and both env vars can be left
+# unset -- session cookies work the normal same-origin way.
+#
+#   FRONTEND_ORIGIN=https://your-app.vercel.app   (exact origin, no trailing slash)
+#   CROSS_ORIGIN_COOKIES=1                        (only over HTTPS -- Render gives you that)
+FRONTEND_ORIGIN = os.environ.get("FRONTEND_ORIGIN")
+if FRONTEND_ORIGIN:
+    try:
+        from flask_cors import CORS
+        CORS(app, supports_credentials=True, origins=[FRONTEND_ORIGIN],
+             allow_headers=["Content-Type"])
+    except ImportError:
+        # Fallback if flask-cors isn't installed: same effect, hand-rolled.
+        @app.after_request
+        def _add_cors_headers(resp):
+            resp.headers["Access-Control-Allow-Origin"] = FRONTEND_ORIGIN
+            resp.headers["Access-Control-Allow-Credentials"] = "true"
+            resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
+            resp.headers["Access-Control-Allow-Methods"] = "GET,POST,OPTIONS"
+            return resp
+
+        @app.route("/api/<path:_any>", methods=["OPTIONS"])
+        def _cors_preflight(_any):
+            return ("", 204)
+
+if os.environ.get("CROSS_ORIGIN_COOKIES") == "1":
+    # Required for the session cookie to survive a cross-site fetch() from
+    # the Vercel domain -- browsers refuse third-party cookies unless
+    # SameSite=None, and SameSite=None requires Secure (HTTPS-only).
+    app.config.update(SESSION_COOKIE_SAMESITE="None", SESSION_COOKIE_SECURE=True)
+
 # Single-user login. Set WEBAPP_USERNAME / WEBAPP_PASSWORD in .env for real
 # use. Falls back to admin/admin for local testing only -- change this
 # before running the app anywhere reachable outside localhost.

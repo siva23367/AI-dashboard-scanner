@@ -22,6 +22,10 @@ services:
         value: /data
       - key: DASHBOARD_CORPUS_PATH
         value: /data/dashboard_corpus.json
+      - key: FRONTEND_ORIGIN
+        sync: false          # e.g. https://your-app.vercel.app -- set after your first Vercel deploy
+      - key: CROSS_ORIGIN_COOKIES
+        value: "1"
     disk:
       name: sriya-data
       mountPath: /data

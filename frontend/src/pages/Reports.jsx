@@ -4,7 +4,7 @@ import { ExternalLink, Download, FileJson, Compass, Inbox } from "lucide-react";
 import { PageHero, Card, KpiCard, EmptyState } from "../components/ui";
 import { TypeBadge } from "../components/ui";
 import { useToast } from "../ToastContext";
-import { api } from "../api";
+import { api, resolveUrl } from "../api";
 
 function formatDate(iso) {
   try {
@@ -80,17 +80,17 @@ export default function Reports() {
                 </div>
                 <div className="flex items-center gap-3 shrink-0 text-[12.5px]">
                   {e.html_url && (
-                    <a href={e.html_url} target="_blank" rel="noopener noreferrer" className="text-signal-blue hover:underline flex items-center gap-1">
+                    <a href={resolveUrl(e.html_url)} target="_blank" rel="noopener noreferrer" className="text-signal-blue hover:underline flex items-center gap-1">
                       <ExternalLink size={12} /> HTML
                     </a>
                   )}
                   {e.pdf_url && (
-                    <a href={e.pdf_url} target="_blank" rel="noopener noreferrer" className="text-signal-blue hover:underline flex items-center gap-1">
+                    <a href={resolveUrl(e.pdf_url)} target="_blank" rel="noopener noreferrer" className="text-signal-blue hover:underline flex items-center gap-1">
                       <Download size={12} /> PDF
                     </a>
                   )}
                   {e.json_url && (
-                    <a href={e.json_url} target="_blank" rel="noopener noreferrer" className="text-signal-blue hover:underline flex items-center gap-1">
+                    <a href={resolveUrl(e.json_url)} target="_blank" rel="noopener noreferrer" className="text-signal-blue hover:underline flex items-center gap-1">
                       <FileJson size={12} /> JSON
                     </a>
                   )}

@@ -3,7 +3,7 @@ import { Link2, ExternalLink, Download, RotateCcw } from "lucide-react";
 import { PageHero, Card, Button, Field, inputClass, ScanSweepPanel } from "../components/ui";
 import { HealthGauge, ScoreBreakdown, SeveritySummary, IssueList, BulletList } from "../components/results";
 import { useToast } from "../ToastContext";
-import { api } from "../api";
+import { api, resolveUrl } from "../api";
 
 export default function WebsiteScan() {
   const { push } = useToast();
@@ -104,14 +104,14 @@ export default function WebsiteScan() {
               </div>
               <div className="flex gap-2">
                 {data.html_url && (
-                  <a href={data.html_url} target="_blank" rel="noopener noreferrer">
+                  <a href={resolveUrl(data.html_url)} target="_blank" rel="noopener noreferrer">
                     <Button variant="ghost">
                       <ExternalLink size={14} /> Full report
                     </Button>
                   </a>
                 )}
                 {data.pdf_url && (
-                  <a href={data.pdf_url} target="_blank" rel="noopener noreferrer">
+                  <a href={resolveUrl(data.pdf_url)} target="_blank" rel="noopener noreferrer">
                     <Button variant="ghost">
                       <Download size={14} /> PDF
                     </Button>

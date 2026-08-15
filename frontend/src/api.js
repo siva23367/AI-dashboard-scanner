@@ -1,6 +1,12 @@
-// Thin wrapper around fetch() for the Flask JSON API. Session-cookie auth,
-// same-origin in production (served from /app/ by Flask itself) and proxied
-// in dev (see vite.config.js), so no tokens or CORS handling needed here.
+// Thin wrapper around fetch() for the Flask JSON API. Session-cookie auth.
+//
+// API_BASE is empty ("") when the frontend is served by Flask itself (same
+// origin -- the /app route in webapp.py) or via the Vite dev proxy. Set
+// VITE_API_BASE_URL at build time (e.g. in Vercel's project settings) when
+// the frontend is deployed separately from the backend, e.g.:
+//   VITE_API_BASE_URL=https://your-api.onrender.com
+// See README-DEPLOY.md for the full Vercel+Render walkthrough.
+const API_BASE = import.meta.env.VITE_API_BASE_URL?.replace(/\/$/, "") || "";
 
 class ApiError extends Error {
   constructor(message, status, detail) {
@@ -18,7 +24,7 @@ async function request(path, { method = "GET", json, formData } = {}) {
   } else if (formData !== undefined) {
     opts.body = formData; // browser sets multipart boundary itself
   }
-  const res = await fetch(path, opts);
+  const res = await fetch(`${API_BASE}${path}`, opts);
   let data = null;
   try {
     data = await res.json();
@@ -55,3 +61,14 @@ export const api = {
 };
 
 export { ApiError };
+
+/** Resolves a relative backend path (e.g. "/files/xyz/report.html", as
+ * returned in html_url/pdf_url/json_url fields) against API_BASE, so report
+ * links keep working when the frontend is deployed separately from the
+ * backend (Vercel + Render). No-op (same-origin relative link) when
+ * VITE_API_BASE_URL isn't set. */
+export function resolveUrl(path) {
+  if (!path) return path;
+  if (/^https?:\/\//.test(path)) return path;
+  return `${API_BASE}${path}`;
+}
