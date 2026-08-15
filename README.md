@@ -19,15 +19,7 @@ The original scanner is a solid rule-based PDP auditor. Pro turns it into a foun
   the exact same HTML report, so it's always identical to what you see in the browser
   and there's nothing extra to keep in sync when the report layout changes.
 
-## DXI / SXI readiness scoring has been removed
 
-The scanner previously shipped a static "DXI/SXI readiness" proxy (GA4/GTM/dataLayer
-presence, search/autocomplete markup) alongside the accessibility/SEO/security/
-performance/conversion categories. That proxy has been removed from `pro_scanner.py`,
-`competitor_compare.py`, and `trust_signals.py` — there is no `dxi`/`sxi`/
-`dxi_sxi_readiness` key anywhere in the scores, metrics, HTML/PDF report, or console
-output anymore. `categories` is now `["accessibility","seo","performance","security",
-"conversion"]`.
 
 Why: this scanner's proxy and the real DXI/SXI shown in the dashboard PDF (Marketing/
 Demographic/Engagement/KPI/Transaction sub-scores computed from a CSV of user-level
