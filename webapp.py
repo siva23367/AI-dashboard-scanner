@@ -425,7 +425,7 @@ ASK_TMPL = """
 <input type="hidden" name="source" value="{{ pdf_source }}">
 {% endif %}
 <label class="checkbox-row"><input type="checkbox" name="summarize" {% if summarize %}checked{% endif %}>
-<span>Write an AI answer from the matches<span class="sub">Needs GEMINI_API_KEY in .env — silently skipped otherwise, results below are unaffected</span></span></label>
+<span>Write an AI answer from the matches<span class="sub">Needs GROQ_API_KEY in .env — silently skipped otherwise, results below are unaffected</span></span></label>
 <button type="submit">Search</button>
 </form>
 </div>
@@ -441,7 +441,7 @@ ASK_TMPL = """
 {% if result.ai_answer_available %}
 <div class="card" style="border-top:3px solid var(--blue-500)"><h2 style="margin-top:0">🤖 AI Answer</h2><p>{{ result.ai_answer }}</p></div>
 {% elif summarize %}
-<div class="card"><p class="muted">AI answer unavailable (no GEMINI_API_KEY set, or the call failed) — structured results below are unaffected.</p></div>
+<div class="card"><p class="muted">AI answer unavailable (no GROQ_API_KEY set, or the call failed) — structured results below are unaffected.</p></div>
 {% endif %}
 
 {% if not result.matched_chunks %}

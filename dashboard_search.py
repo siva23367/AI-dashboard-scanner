@@ -6,17 +6,21 @@ import re
 from dataclasses import dataclass, field, asdict
 from typing import Any, Dict, List, Optional
 
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+try:
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+except ImportError:  # pragma: no cover - optional dependency in some environments
+    TfidfVectorizer = None  # type: ignore[assignment]
+    cosine_similarity = None  # type: ignore[assignment]
 
 from dashboard_ingest import Chunk, load_corpus, DEFAULT_CORPUS_PATH
 
 try:
-    from google import genai
+    from groq import Groq
 except ImportError:
-    genai = None
+    Groq = None
 
-MODEL = os.environ.get("Groq_MODEL", "gemini-3.6-flash")
+MODEL = os.environ.get("GROQ_MODEL", "llama-3.1-8b-instant")
 
 PROXIMITY_WINDOW = 140.0  # layout units (~pixels at typical OCR dpi)
 
@@ -50,7 +54,7 @@ class DashboardIndex:
     def __init__(self, corpus_path: str = DEFAULT_CORPUS_PATH):
         self.corpus_path = corpus_path
         self.chunks: List[Chunk] = load_corpus(corpus_path)
-        self._vectorizer: Optional[TfidfVectorizer] = None
+        self._vectorizer: Optional["TfidfVectorizer"] = None
         self._matrix = None
         if self.chunks:
             self._vectorizer = TfidfVectorizer(stop_words="english")
@@ -172,13 +176,13 @@ class DashboardIndex:
 # LLM summarization (same fallback contract as llm_judge.py)
 # --------------------------------------------------------------------------
 
-def _get_client():
-    if genai is None:
+def _get_client() -> Optional["Groq"]:
+    if Groq is None:
         return None
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
         return None
-    return genai.Client(api_key=api_key)
+    return Groq(api_key=api_key)
 
 
 def _short_error(e: Exception) -> str:
@@ -190,7 +194,7 @@ def _short_error(e: Exception) -> str:
 
 
 def summarize_with_llm(result: SearchResult) -> SearchResult:
-    """Ask Gemini to turn the structured findings into a short "AI Answer"
+    """Ask Groq (Llama) to turn the structured findings into a short "AI Answer"
     paragraph. Silently leaves result.ai_answer as None (with
     ai_answer_available=False) if no API key is set or the call fails --
     the structured data in `result` is still fully usable without this."""
@@ -221,12 +225,15 @@ def summarize_with_llm(result: SearchResult) -> SearchResult:
         "numbers that are not present in the provided context. 4-8 sentences."
     )
     try:
-        resp = client.models.generate_content(
+        resp = client.chat.completions.create(
+            messages=[
+                {"role": "system", "content": system},
+                {"role": "user", "content": "\n".join(lines)},
+            ],
             model=MODEL,
-            contents=f"{system}\n\n" + "\n".join(lines),
-            config={"temperature": 0.2},
+            temperature=0.2,
         )
-        text = (resp.text or "").strip()
+        text = (resp.choices[0].message.content or "").strip()
         if text:
             result.ai_answer = text
             result.ai_answer_available = True
@@ -271,7 +278,7 @@ def main():
     p.add_argument("--corpus", default=DEFAULT_CORPUS_PATH, help="Corpus JSON path (default dashboard_corpus.json)")
     p.add_argument("--no-semantic", action="store_true", help="Disable TF-IDF semantic fallback, exact match only")
     p.add_argument("--no-surrounding", action="store_true", help="Don't pull in nearby cards/labels, matched text only")
-    p.add_argument("--summarize", action="store_true", help="Also call Gemini for a natural-language AI Answer")
+    p.add_argument("--summarize", action="store_true", help="Also call Groq for a natural-language AI Answer")
     p.add_argument("--research", action="store_true", help="Also run live web research on this query via product_research.py")
     p.add_argument("--out", default=None, help="Optional path to write the full JSON result")
     args = p.parse_args()
@@ -315,7 +322,7 @@ def main():
     if result.ai_answer_available:
         print(f"\nAI Answer:\n{result.ai_answer}")
     elif args.summarize:
-        print("\nAI Answer: unavailable (no GEMINI_API_KEY set, or the call failed/quota-limited) -- structured results above are unaffected.")
+        print("\nAI Answer: unavailable (no GROQ_API_KEY set, or the call failed/quota-limited) -- structured results above are unaffected.")
 
     if args.out:
         with open(args.out, "w", encoding="utf-8") as f:

@@ -84,7 +84,7 @@ export default function AskDashboards() {
             <input type="checkbox" className="mt-0.5" checked={summarize} onChange={(e) => setSummarize(e.target.checked)} />
             <span className="text-[13.5px]">
               Write an AI answer from the matches
-              <span className="block text-[12px] text-muted">Needs GEMINI_API_KEY in .env — silently skipped otherwise</span>
+              <span className="block text-[12px] text-muted">Needs GROQ_API_KEY in .env — silently skipped otherwise</span>
             </span>
           </label>
           <Button type="submit" disabled={loading}>
