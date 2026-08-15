@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: sriya-web-intelligence
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter          # cheapest paid plan with enough RAM for Playwright+OCR;
+                            # the free plan often OOMs on Chromium -- see README-DEPLOY.md
+    envVars:
+      - key: WEBAPP_USERNAME
+        sync: false          # set in the Render dashboard, not committed
+      - key: WEBAPP_PASSWORD
+        sync: false
+      - key: WEBAPP_SECRET_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: llama-3.1-8b-instant
+      - key: WEBAPP_PORT
+        value: "8005"
+      - key: DATA_DIR
+        value: /data
+      - key: DASHBOARD_CORPUS_PATH
+        value: /data/dashboard_corpus.json
+    disk:
+      name: sriya-data
+      mountPath: /data
+      sizeGB: 1

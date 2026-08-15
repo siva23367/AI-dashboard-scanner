@@ -59,7 +59,7 @@ except ImportError:
     pytesseract = None
     Image = None
 
-DEFAULT_CORPUS_PATH = "dashboard_corpus.json"
+DEFAULT_CORPUS_PATH = os.environ.get("DASHBOARD_CORPUS_PATH", "dashboard_corpus.json")
 
 # Numbers, percentages, currency amounts -- pulled out separately from plain
 # text so downstream retrieval/matching can treat "23.91%" as a metric value

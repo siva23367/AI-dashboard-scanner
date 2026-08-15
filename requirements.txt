@@ -11,3 +11,5 @@ pytesseract>=0.3.10
 pillow>=10.0
 groq>=0.1
 flask>=3.0
+gunicorn>=22.0
+python-dotenv>=1.0

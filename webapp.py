@@ -45,10 +45,16 @@ import pdf_export
 import product_research
 
 APP_ROOT = Path(__file__).parent
-REPORTS_DIR = APP_ROOT / "reports"
-UPLOADS_DIR = APP_ROOT / "uploads"
-REPORTS_DIR.mkdir(exist_ok=True)
-UPLOADS_DIR.mkdir(exist_ok=True)
+# DATA_DIR lets a production deploy point all writable state (reports,
+# uploads, and -- via DEFAULT_CORPUS_PATH below -- the search corpus) at one
+# mounted persistent disk, e.g. DATA_DIR=/data on Render/Railway/Fly, so a
+# redeploy doesn't wipe everything. Defaults to the project folder itself,
+# which is exactly the old behaviour for local/dev use.
+DATA_DIR = Path(os.environ.get("DATA_DIR", APP_ROOT))
+REPORTS_DIR = DATA_DIR / "reports"
+UPLOADS_DIR = DATA_DIR / "uploads"
+REPORTS_DIR.mkdir(exist_ok=True, parents=True)
+UPLOADS_DIR.mkdir(exist_ok=True, parents=True)
 INDEX_PATH = REPORTS_DIR / "index.json"
 ALLOWED_UPLOAD_EXT = {".pdf", ".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tiff"}
 
